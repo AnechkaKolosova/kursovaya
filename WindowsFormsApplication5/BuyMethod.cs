@@ -72,9 +72,51 @@ namespace WindowsFormsApplication5
 		public void GoToFlat()
 		{
 			Hide();
-			MyFlats myflats = new MyFlats();
+			MyFlats myflats = new MyFlats(dataGridView1.CurrentRow.Index);
 			myflats.ShowDialog();
 			Close();
+		}
+
+		public void GoToMain()
+		{
+			Hide();
+			Form1 main = new Form1();
+			main.ShowDialog();
+			Close();
+		}
+
+		public void GoToBuy()
+		{
+			Hide();
+			Buy buy = new Buy();
+			buy.ShowDialog();
+			Close();
+		}
+
+		public void GoToSell()
+		{
+			Hide();
+			Sell sell = new Sell();
+			sell.ShowDialog();
+			Close();
+		}
+
+		public void CorrectInt(KeyPressEventArgs e)
+		{
+		   if (e.KeyChar >= '0' && e.KeyChar <= '9')
+				{
+					return;
+				}
+				if (Char.IsControl(e.KeyChar))
+				{
+					return;
+				}
+
+				else
+				{
+					e.Handled = true;
+				}
+			
 		}
 	}
 }

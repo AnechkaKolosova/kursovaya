@@ -43,5 +43,45 @@ namespace WindowsFormsApplication5
 		{
 			GoToFlat();
 		}
+		private void главнаяToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			GoToMain();
+		}
+		private void купитьToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			GoToBuy();
+		}
+		private void продатьToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			GoToSell();
+		}
+		private void comboBox4_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			CorrectInt(e);
+			try
+			{
+				if (Convert.ToInt32(comboBox4.Text) > 99) comboBox4.BackColor = Color.BlueViolet;
+				else comboBox4.BackColor = Color.White;
+				
+			}
+			catch
+			{
+				return;
+			}
+		}
+		private void comboBox5_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			CorrectInt(e);
+			try
+			{
+				if (Convert.ToInt32(comboBox5.Text) > 99) comboBox5.BackColor = Color.BlueViolet;
+				else comboBox5.BackColor = Color.White;
+				
+			}
+			catch
+			{
+				return;
+			}
+		}
 	}
 }

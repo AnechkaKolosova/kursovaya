@@ -50,56 +50,15 @@ namespace WindowsFormsApplication5
            
         }
 
-        private void главнаяToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Form1 main = new Form1();
-            main.ShowDialog();
-            Close();
-        }
+        
 
-        private void купитьToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Buy buy = new Buy();
-            buy.ShowDialog();
-            Close();
-        }
+        
 
-        private void продатьToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Sell sell = new Sell();
-            sell.ShowDialog();
-            Close();
-        }
+        
         //кол-во комнат только цифрі не больше 100
-        private void comboBox4_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if(e.KeyChar >='0' && e.KeyChar <= '9')
-            {
-                return;
-            }
-            if (Char.IsControl(e.KeyChar))
-            {
-                return;
-            }
-            
-            else
-            {
-                e.Handled = true;
-            }
-        }
+        
 
-        private void comboBox5_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar >= '0' && e.KeyChar <= '9')
-                return;
-            if (Char.IsControl(e.KeyChar))
-                return;
-            else
-                e.Handled= true;
-        }
+        
 		
 
 	  
@@ -124,20 +83,7 @@ namespace WindowsFormsApplication5
 		}
 
 		
-
-		
-		
-
-		
-
-		
-
-		
-
-		
-			
-			
-		}
+	}
 	}
 
 

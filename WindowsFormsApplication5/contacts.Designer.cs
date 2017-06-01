@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication5
 {
-	partial class ontacts
+	partial class contacts
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,12 +29,15 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ontacts));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(contacts));
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// textBox1
@@ -77,6 +80,33 @@
 			this.label1.TabIndex = 4;
 			this.label1.Text = "Контакты продавца";
 			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(144, 197);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(53, 25);
+			this.label2.TabIndex = 5;
+			this.label2.Text = "Имя";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(58, 275);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(183, 25);
+			this.label3.TabIndex = 6;
+			this.label3.Text = "Номер телефона";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(144, 344);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(51, 25);
+			this.label4.TabIndex = 7;
+			this.label4.Text = "mail";
+			// 
 			// ontacts
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -84,6 +114,9 @@
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(786, 627);
+			this.Controls.Add(this.label4);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.textBox3);
 			this.Controls.Add(this.textBox2);
@@ -102,5 +135,8 @@
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label label4;
 	}
 }
