@@ -70,6 +70,12 @@
     <Compile Include="BuyMethod.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contacts.Designer.cs">
+      <DependentUpon>contacts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Flats.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Buy.resx">
       <DependentUpon>Buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contacts.resx">
+      <DependentUpon>contacts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
